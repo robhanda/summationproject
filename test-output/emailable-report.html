@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">12</td><td class="numi">8</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">1.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="6">sep_dataprovider.driver_summation</td><td><a href="#m1"><b>test_summation</b> (smoke) </a></td><td class="numi">4</td><td>1506760848249</td><td class="numi">350</td></tr><tr class="failedodd"><td><a href="#m2"><b>test_summation</b> (smoke) </a></td><td class="numi">4</td><td>1506760848249</td><td class="numi">350</td></tr><tr class="failedodd"><td><a href="#m3"><b>test_summation</b> (smoke) </a></td><td class="numi">4</td><td>1506760848249</td><td class="numi">350</td></tr><tr class="failedodd"><td><a href="#m4"><b>test_summation</b> (smoke) </a></td><td class="numi">4</td><td>1506760848249</td><td class="numi">350</td></tr><tr class="failedodd"><td><a href="#m5"><b>test_summation</b> (smoke) </a></td><td class="numi">4</td><td>1506760848249</td><td class="numi">350</td></tr><tr class="failedodd"><td><a href="#m6"><b>test_summation</b> (smoke) </a></td><td class="numi">4</td><td>1506760848249</td><td class="numi">350</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="12">sep_dataprovider.driver_summation</td><td><a href="#m7"><b>print</b> (regression) </a></td><td class="numi">6</td><td>1506760847484</td><td class="numi">41</td></tr><tr class="passedodd"><td><a href="#m8"><b>print</b> (regression) </a></td><td class="numi">6</td><td>1506760847484</td><td class="numi">41</td></tr><tr class="passedodd"><td><a href="#m9"><b>print</b> (regression) </a></td><td class="numi">6</td><td>1506760847484</td><td class="numi">41</td></tr><tr class="passedodd"><td><a href="#m10"><b>print</b> (regression) </a></td><td class="numi">6</td><td>1506760847484</td><td class="numi">41</td></tr><tr class="passedodd"><td><a href="#m11"><b>print</b> (regression) </a></td><td class="numi">6</td><td>1506760847484</td><td class="numi">41</td></tr><tr class="passedodd"><td><a href="#m12"><b>print</b> (regression) </a></td><td class="numi">6</td><td>1506760847484</td><td class="numi">41</td></tr><tr class="passedodd"><td><a href="#m13"><b>test_summation</b> (smoke) </a></td><td class="numi">2</td><td>1506760847539</td><td class="numi">707</td></tr><tr class="passedodd"><td><a href="#m14"><b>test_summation</b> (smoke) </a></td><td class="numi">2</td><td>1506760847539</td><td class="numi">707</td></tr><tr class="passedodd"><td><a href="#m15"><b>test_summation</b> (smoke) </a></td><td class="numi">2</td><td>1506760847539</td><td class="numi">707</td></tr><tr class="passedodd"><td><a href="#m16"><b>test_summation</b> (smoke) </a></td><td class="numi">2</td><td>1506760847539</td><td class="numi">707</td></tr><tr class="passedodd"><td><a href="#m17"><b>test_summation</b> (smoke) </a></td><td class="numi">2</td><td>1506760847539</td><td class="numi">707</td></tr><tr class="passedodd"><td><a href="#m18"><b>test_summation</b> (smoke) </a></td><td class="numi">2</td><td>1506760847539</td><td class="numi">707</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">sep_dataprovider.driver_summation:test_summation</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=7.0, Exp_Result=2.0, Num1=6.0}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The following asserts failed:
+null, null, null</p>
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+<br/>at sep_dataprovider.driver_summation.test_summation(driver_summation.java:63)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">sep_dataprovider.driver_summation:test_summation</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=5.0, Exp_Result=6.0, Num1=4.0}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The following asserts failed:
+null</p>
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+<br/>at sep_dataprovider.driver_summation.test_summation(driver_summation.java:63)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">sep_dataprovider.driver_summation:test_summation</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=6.0, Exp_Result=7.0, Num1=5.0}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The following asserts failed:
+null, null</p>
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+<br/>at sep_dataprovider.driver_summation.test_summation(driver_summation.java:63)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">sep_dataprovider.driver_summation:test_summation</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=8.0, Exp_Result=15.0, Num1=7.0}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The following asserts failed:
+null, null, null</p>
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:37)
+<br/>at sep_dataprovider.driver_summation.test_summation(driver_summation.java:63)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">sep_dataprovider.driver_summation:print</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=5.0, Exp_Result=6.0, Num1=4.0}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">sep_dataprovider.driver_summation:test_summation</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=3.0, Exp_Result=5.0, Num1=2.0}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">sep_dataprovider.driver_summation:print</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=3.0, Exp_Result=5.0, Num1=2.0}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">sep_dataprovider.driver_summation:print</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=4.0, Exp_Result=7.0, Num1=3.0}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">sep_dataprovider.driver_summation:test_summation</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=4.0, Exp_Result=7.0, Num1=3.0}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">sep_dataprovider.driver_summation:print</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=6.0, Exp_Result=7.0, Num1=5.0}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">sep_dataprovider.driver_summation:print</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=7.0, Exp_Result=2.0, Num1=6.0}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">sep_dataprovider.driver_summation:print</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{Num2=8.0, Exp_Result=15.0, Num1=7.0}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

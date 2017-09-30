@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [appium]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="RegSet1(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="sep_dataprovider.driver_summation">
+        <methods>
+          <include name="test_summation" invocation-numbers="0 1 2 3 4 5"/>
+        </methods>
+      </class> <!-- sep_dataprovider.driver_summation -->
+    </classes>
+  </test> <!-- RegSet1(failed) -->
+</suite> <!-- Failed suite [appium] -->
